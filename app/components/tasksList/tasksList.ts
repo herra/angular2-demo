@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'tasks-list',
@@ -26,4 +26,7 @@ import { Component } from '@angular/core';
       </div>
   `,
 })
-export class TasksList { tasks = [{ title: 'Test 1'}]; }
+export class TasksList {
+  @Input()
+  tasks = [{ title: 'Test 1' }];
+}

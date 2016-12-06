@@ -1,9 +1,9 @@
 <div>
     <div class="container HomeTaskInputContainer">
-        <task-input></task-input>
+        <task-input (onSubmitted)="onSubmitted($event)" ></task-input>
     </div>
 
     <div class="HomeTasksListContainer">
-        <tasks-list></tasks-list>
+        <tasks-list [tasks]="tasks"></tasks-list>
     </div>
 </div>
